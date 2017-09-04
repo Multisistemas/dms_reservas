@@ -1,0 +1,503 @@
+/**  * File: custom css for multisis-lte, DMS theme  * Author: Luis Medrano
+<lmedrano@multisistemas.com.sv>  */
+
+/* ---------- checkboxes style ------------ */
+.material-switch > input[type="checkbox"] {
+    display: none;   
+}
+
+.material-switch > label {
+    cursor: pointer;
+    height: 0px;
+    position: relative; 
+    width: 40px;  
+}
+
+.material-switch > label::before {
+    background: rgb(0, 0, 0);
+    box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    content: '';
+    height: 16px;
+    margin-top: -8px;
+    position:absolute;
+    opacity: 0.3;
+    transition: all 0.4s ease-in-out;
+    width: 40px;
+}
+.material-switch > label::after {
+    background: rgb(255, 255, 255);
+    border-radius: 16px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+    content: '';
+    height: 24px;
+    left: -4px;
+    margin-top: -8px;
+    position: absolute;
+    top: -4px;
+    transition: all 0.3s ease-in-out;
+    width: 24px;
+}
+.material-switch > input[type="checkbox"]:checked + label::before {
+    background: inherit;
+    opacity: 0.5;
+}
+.material-switch > input[type="checkbox"]:checked + label::after {
+    background: inherit;
+    left: 20px;
+}
+
+
+
+/* ------------- Main header ------------------ */
+
+.img-nav-mini {
+    width: 100% !important;
+    max-width: 25px !important;
+    height: auto;
+}
+
+.navbar-nav>li>a {
+    padding-top: 12px !important;
+    padding-bottom: 12px !important;
+}
+
+.a-fix-height {
+    height: 50px !important;
+}
+
+i.fix-padding {
+    padding-top: 7px;
+}
+
+.my-menu {
+    max-height: 200px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.my-menu>li>a {
+    font-size: 12px;
+    padding: 0px;
+    color: #666; 
+}
+
+.my-menu>li:hover {
+    background-color: #f6f6f6;
+}
+
+.my-menu-body {
+    border: 1px solid #eeeeee;
+    padding: 10px;
+}
+
+.language-active {
+    background-color: #eeeeee;
+}
+
+/* ------------- Control sidebar ------------------ */
+.control-sidebar-heading {
+    text-align: center !important;
+}
+
+.sidebar-menu>li>a {
+    /*padding: 5px 5px 5px 15px !important; */
+}
+
+.btn-admin-tools {
+    border: 1px solid #777;
+    background-color: #666;
+}
+
+
+/* ------------- Grids ------------------ */
+.well {
+    background-color: #fdfdfd !important;
+}
+
+.row {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
+#doc-title {
+    font-size: 14px !important;
+}
+
+.box-header-doc-preview{
+    padding: 5px !important;
+}
+
+.align-center {
+    text-align: center !important;
+}
+
+.div-hidden {
+    display: none;
+}
+
+.div-bkg-color {
+    background-color: rgba(210, 214, 222, 0.48) !important;
+    border-bottom: 1px solid #f39c12;
+    border-left: 1px solid #f39c12;
+    border-right: 1px solid #f39c12;
+}
+
+.div-green-border {
+    border-bottom: 1px solid #00a65a;
+    border-left: 1px solid #00a65a;
+    border-right: 1px solid #00a65a;
+}
+
+.standby {
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    margin-top: -15px;
+    margin-left: -30px;
+}
+
+.gap-10 {
+    height: 10px;
+}
+
+.gap-15 {
+    height: 15px;
+}
+
+.gap-20 {
+    height: 20px;
+}
+
+.gap-30 {
+    height: 30px;
+}
+
+.gap-40 {
+    height: 40px;
+}
+
+.aside-fixed {
+    position: fixed;
+    max-height: 100%;
+    overflow: auto;
+    padding-bottom: 50px;
+}
+
+.delete-wokflow-div {
+    margin-bottom: 10px;
+}
+
+.col-no-padding {
+    padding: 0px !important;
+}
+
+#workflow-information {
+    margin-bottom: 0px !important;
+}
+
+.splash {
+    display: none;
+}
+
+.comment-width {
+    max-width: 400px;
+}
+
+.small-box>.inner {
+    padding: 20px !important;
+}
+
+
+
+/* ------------- Modals ------------------ */
+/*.after_modal_appended
+{  
+  position:relative;
+}
+
+.block 
+{
+  width:100%;
+  height:300px;
+}
+
+.modal, .modal-backdrop {
+    position: absolute !important;
+}*/
+
+.modal-dialog {
+    background-color: #ffffff;
+    border-radius: 8px;
+}
+
+.inputDescription {
+    color: #777 !important;
+}
+
+.modal {
+    overflow: auto !important;
+}
+
+
+/* ------------- Breadcrumb ------------------ */
+.breadcrumb-btn:before {
+    content: "" !important;
+}
+
+.default-bread {
+    padding: 5px 15px 15px 15px !important;
+    margin-bottom: 10px !important;
+}
+
+.nonconfo-bread {
+    padding: 5px 15px 5px 15px !important;
+    margin-bottom: 10px !important;
+}
+
+
+/* ------------- Forms ------------------ */
+input[type=text] {
+    max-width: 320px !important;
+}
+
+input[type=password] {
+    max-width: 320px !important;
+}
+
+select.form-control {
+    max-width: 320px !important;
+}
+
+textarea.form-control {
+    max-width: 600px !important;
+}
+
+.select2 {
+    max-width: 600px !important;
+    display: block !important;
+}
+
+.select2-selection {
+    max-width: 600px !important;
+    display: block !important;
+}
+
+.float-left {
+    float: left;
+}
+
+.is-required {
+    color: red !important;
+}
+
+.select2-container--default .select2-selection--single {
+    border-radius: 0px !important;
+}
+
+.select2-container--default .select2-selection--multiple {
+    border-radius: 0px !important;
+}
+
+.tr-border {
+    border: 1px solid #c3c3c3;
+}
+
+.btn-action {
+    width: 30px !important;
+    padding: 5px !important;
+}
+
+.custom-input-text-search {
+    vertical-align: middle;
+    display: inline-block;
+    height: 34px;
+    padding: 6px 12px;
+}
+
+a.doc-link {
+    font-weight: bold;
+}
+
+a.doc-disable {
+    color: #666 !important;
+}
+
+/* ------------- Lists ------------------ */
+ul.unstyled {
+    list-style-type: none;
+    text-decoration: none;
+}
+
+
+/* --------------------- Tables ------------------- */
+
+.align-center {
+    text-align: center;
+}
+
+.th-info-background {
+    background-color: rgba(90, 206, 234, 0.54);
+}
+
+.td-warning-background {
+    background-color: rgba(243, 156, 18, 0.65);
+}
+
+.td-success-background {
+    background-color: rgba(0, 166, 90, 0.37);
+}
+
+.td-action-bkg-one {
+    background-color: #39CCCC;
+    color: #ffffff;
+}
+
+.td-action-bkg-two {
+    background-color: #605ca8;
+    color: #ffffff;
+}
+
+.background-white {
+    background-color: #ffffff !important;
+}
+
+.color-month {
+    color: #565454 !important;
+}
+
+.box-calendar-background {    
+    background-color: rgba(236, 240, 245, 0.51) !important;
+}
+
+.today {
+    background-color: #cff5ff;
+}
+
+.today-week {
+    background-color: #5fdaa2;
+    border: none;
+    padding: 10px;
+}
+
+.today-week-default {
+    background-color: #e6f6ff;
+    border: none;
+    padding: 10px;
+}
+
+.is-event {
+    background-color: #b8f1b8;
+}
+
+.table-no-margin{
+    margin-bottom: 0px !important;
+}
+
+.h5-no-margin {
+    margin: 0px !important;
+}
+
+.week-day-border {
+    border: 1px solid #e0e0e0;
+    margin-bottom: 10px;
+}
+
+.header-bold {
+    font-weight: bold;
+}
+
+/* ------------------- My folders tree ----------------------- */
+
+a.fix-width {
+    box-sizing: border-box;
+    padding-right: 20px !important;
+}
+
+span.wrap-normal {
+    white-space: normal;
+}
+
+.link-to-folder {  
+    float: right;
+    z-index: 100;
+    border-left-color: transparent !important;
+    left: -5px !important;
+}
+
+/* ------------------- The logo ----------------------- */
+
+.thelogo {
+    max-width: 100px;
+}
+
+.thebrand{
+    max-width: 200px;
+}
+
+.li-logo {
+    padding-bottom: 10px;
+}
+
+.header-logo {
+    max-width: 30px;
+    max-height: 30px;
+}
+
+.header-brand {
+    max-width: 200px;
+    max-height: 40px;
+    vertical-align: sub;
+}
+
+.login-brand {
+    max-width: 300px;
+    height: auto;
+}
+
+.guest-access {
+    background-color: #fff;
+    margin-top: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+.logo-lg {
+    max-height: 50px !important;
+    padding: 5px 0px 5px 0px !important;    
+}
+
+/* -------------- Workflow colors --------------- */
+
+i.initstate {
+    color: #ff9900;
+}
+
+i.in-workflow {
+    color: #11479e;
+}
+
+i.workflow-action {
+    color: #91479e;
+}
+
+i.released {
+    color: #00b000;
+}
+
+i.rejected {
+    color: #b00000;
+}
+
+[class^="fa-circle"] {
+    display: inline;
+    width: auto;
+    height: auto;
+    line-height: normal;
+    vertical-align: baseline;
+    background-image: none;
+    background-position: 0% 0%;
+    background-repeat: repeat;
+    margin-top: 0;
+}
