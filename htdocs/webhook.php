@@ -4,4 +4,4 @@ if ( $_POST['payload'] ) {
   $cwd = getcwd();
   shell_exec( "cd $cwd && git reset --hard HEAD && git pull && chmod -R 755 *" );
 }
-?>hi
+?>hi reserva!
